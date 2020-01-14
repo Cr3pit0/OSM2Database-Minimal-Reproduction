@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OsmSharp, Version=6.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\OsmSharp.6.2.0\lib\net45\OsmSharp.dll</HintPath>
+    <Reference Include="FastMember, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.5.0\lib\net461\FastMember.dll</HintPath>
     </Reference>
-    <Reference Include="protobuf-net, Version=2.3.7.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\packages\protobuf-net.2.3.7\lib\net40\protobuf-net.dll</HintPath>
+    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.4.4\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -52,6 +52,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\OSMHelper.cs" />
+    <Compile Include="Helper\Protobuf\Blob.cs" />
+    <Compile Include="Helper\Protobuf\BlobHeader.cs" />
+    <Compile Include="Helper\Protobuf\HeaderBBox.cs" />
+    <Compile Include="Helper\Protobuf\OsmHeader.cs" />
+    <Compile Include="Helper\Protobuf\PbfChangeset.cs" />
+    <Compile Include="Helper\Protobuf\PbfDenseMetadata.cs" />
+    <Compile Include="Helper\Protobuf\PbfDenseNodes.cs" />
+    <Compile Include="Helper\Protobuf\PbfMetadata.cs" />
+    <Compile Include="Helper\Protobuf\PbfNode.cs" />
+    <Compile Include="Helper\Protobuf\PbfRelation.cs" />
+    <Compile Include="Helper\Protobuf\PbfRelationMemberType.cs" />
+    <Compile Include="Helper\Protobuf\PbfWay.cs" />
+    <Compile Include="Helper\Protobuf\PrimitiveBlock.cs" />
+    <Compile Include="Helper\Protobuf\PrimitiveGroup.cs" />
+    <Compile Include="Helper\Protobuf\StringTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,5 +75,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
